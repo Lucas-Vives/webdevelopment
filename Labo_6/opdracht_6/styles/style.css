@@ -1,0 +1,22 @@
+body {
+    font-size: 3em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    background: url("../images/uncheked.png") no-repeat center;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+li.checked::before {
+    background-image: url("../images/cheked.png");
+}
