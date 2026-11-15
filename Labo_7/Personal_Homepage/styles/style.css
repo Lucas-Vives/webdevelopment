@@ -1,0 +1,270 @@
+:root {
+    --corner-radius: 10px;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgb(235, 235, 235);
+    color: #222;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2c4ecf;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+header h1 {
+    margin: 0 0 0.4rem 0;
+}
+
+header p {
+    margin: 0;
+    color: #555;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin: 1.5rem 0;
+}
+
+section > h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.basic-info,
+.centered {
+    max-width: 50%;
+    margin: 5px auto;
+}
+
+.basic-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.info-box {
+    text-align: center;
+    flex-grow: 1;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.card-reel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+article {
+    background-color: white;
+    border-radius: var(--corner-radius);
+    padding: 20px;
+    box-shadow: 2px 5px 10px #dddddd;
+    max-width: 900px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+}
+
+main article {
+    max-width: none;
+    margin: 10px 0;
+}
+
+/* Code & Divider */
+code {
+    background-color: #f0f0f0;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 12px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+}
+
+hr {
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+figure {
+    margin: 20px auto;
+    width: 300px;
+    box-shadow: 2px 5px 10px #dddddd;
+    background-color: #ebebeb;
+    border-radius: var(--corner-radius);
+    overflow: hidden;
+}
+
+figure > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.profile-img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+figcaption {
+    text-align: center;
+    margin: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: white;
+}
+
+caption {
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+}
+
+th {
+    background-color: #7777f6;
+    color: white;
+    padding: 12px;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #eaf2f8;
+}
+
+tbody .low-score {
+    color: #ff0000;
+}
+
+section.vrienden table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    border: 1px solid #36752D;
+    border-radius: 3px;
+    overflow: hidden;
+    font: normal 12px/150% Geneva, Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+section.vrienden table td,
+section.vrienden table th {
+    padding: 6px 10px;
+    text-align: left;
+}
+
+section.vrienden table thead th {
+    background: linear-gradient(to bottom, #36752D 5%, #275420 100%);
+    background-color: #36752D;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    border-left: 1px solid #36752D;
+    border-bottom: none;
+}
+
+section.vrienden table thead th:first-child {
+    border-left: none;
+}
+
+section.vrienden table tbody td {
+    color: #275420;
+    border-left: 1px solid #C6FFC2;
+    font-size: 12px;
+}
+
+section.vrienden table tbody td:first-child {
+    border-left: none;
+}
+
+section.vrienden table tbody tr:nth-child(even),
+section.vrienden table tbody tr:nth-child(odd) {
+    background-color: transparent;
+}
+
+section.vrienden table tbody .alt td {
+    background-color: #DFFFDE;
+    color: #275420;
+}
+
+.onbekend {
+    background-color: red;
+}
+
+footer {
+    text-align: center;
+    background-color: lightgray;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .basic-info {
+        flex-direction: column;
+    }
+
+    .centered,
+    .basic-info {
+        max-width: 90%;
+    }
+
+    figure {
+        width: 100%;
+        max-width: 300px;
+    }
+}
